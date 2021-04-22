@@ -5,7 +5,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace MC.CadastroCliente.Infra.Data.Context
 {
-    class CadastroClienteContext : DbContext
+    public class CadastroClienteContext : DbContext
     {
         public DbSet<Cliente> Clientes { get; private set; }
 
