@@ -2,7 +2,7 @@
 
 namespace MC.CadastroCliente.Domain.Models
 {
-    class Entity
+    public abstract class Entity
     {
         protected Entity()
         {

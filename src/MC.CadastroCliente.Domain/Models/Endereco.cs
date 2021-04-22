@@ -2,7 +2,7 @@
 
 namespace MC.CadastroCliente.Domain.Models
 {
-    class Endereco
+    public class Endereco : Entity
     {
         public string Logradouro { get; set; }
 

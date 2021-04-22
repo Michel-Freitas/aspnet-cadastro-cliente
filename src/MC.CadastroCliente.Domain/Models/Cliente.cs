@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MC.CadastroCliente.Domain.Models
 {
-    class Cliente
+    public class Cliente : Entity
     {
 
         public Cliente()

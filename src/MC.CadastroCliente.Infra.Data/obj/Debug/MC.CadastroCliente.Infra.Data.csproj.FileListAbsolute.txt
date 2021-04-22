@@ -1,0 +1,14 @@
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\MC.CadastroCliente.Infra.Data.dll.config
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\MC.CadastroCliente.Infra.Data.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\MC.CadastroCliente.Infra.Data.pdb
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\MC.CadastroCliente.Domain.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\MC.CadastroCliente.Domain.pdb
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\obj\Debug\MC.CadastroCliente.Infra.Data.csprojAssemblyReference.cache
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\obj\Debug\MC.CadastroCliente.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\obj\Debug\MC.CadastroCliente.Infra.Data.csproj.CopyComplete
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\obj\Debug\MC.CadastroCliente.Infra.Data.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Infra.Data\obj\Debug\MC.CadastroCliente.Infra.Data.pdb

@@ -1,0 +1,6 @@
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\bin\Debug\MC.CadastroCliente.Domain.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\bin\Debug\MC.CadastroCliente.Domain.pdb
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\obj\Debug\MC.CadastroCliente.Domain.csprojAssemblyReference.cache
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\obj\Debug\MC.CadastroCliente.Domain.csproj.CoreCompileInputs.cache
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\obj\Debug\MC.CadastroCliente.Domain.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.Domain\obj\Debug\MC.CadastroCliente.Domain.pdb
