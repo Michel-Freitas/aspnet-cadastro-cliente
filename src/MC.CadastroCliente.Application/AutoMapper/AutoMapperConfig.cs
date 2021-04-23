@@ -7,7 +7,7 @@ using AutoMapper;
 
 namespace MC.CadastroCliente.Application.AutoMapper
 {
-    class AutoMapperConfig
+    public class AutoMapperConfig
     {
         public static void RegisterMappings()
         {

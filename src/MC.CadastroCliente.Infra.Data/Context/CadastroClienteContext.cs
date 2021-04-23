@@ -7,6 +7,12 @@ namespace MC.CadastroCliente.Infra.Data.Context
 {
     public class CadastroClienteContext : DbContext
     {
+
+        public CadastroClienteContext()
+            :base("DefaultConnection")
+        {
+            
+        }
         public DbSet<Cliente> Clientes { get; set; }
 
         public DbSet<Endereco> Enderecos { get; set; }
