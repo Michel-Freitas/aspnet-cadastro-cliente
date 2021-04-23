@@ -29,7 +29,5 @@ namespace MC.CadastroCliente.UI.Web.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<MC.CadastroCliente.Application.ViewModel.ClienteViewModel> ClienteViewModels { get; set; }
     }
 }

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using MC.CadastroCliente.Application.Interfaces;
+using MC.CadastroCliente.Application.Services;
 using MC.CadastroCliente.Application.ViewModel;
 using MC.CadastroCliente.UI.Web.Models;
 
@@ -13,22 +15,27 @@ namespace MC.CadastroCliente.UI.Web.Controllers
 {
     public class ClientesController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private readonly IClienteAppService _clienteAppService;
 
-        // GET: Clientes
-        public ActionResult Index()
+        public ClientesController()
         {
-            return View(db.ClienteViewModels.ToList());
+            _clienteAppService = new ClienteAppService();
         }
 
-        // GET: Clientes/Details/5
+        public ActionResult Index()
+        {
+            return View(_clienteAppService.ObterTodos());
+        }
+        
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ClienteViewModel clienteViewModel = db.ClienteViewModels.Find(id);
+
+            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
+
             if (clienteViewModel == null)
             {
                 return HttpNotFound();
@@ -36,38 +43,33 @@ namespace MC.CadastroCliente.UI.Web.Controllers
             return View(clienteViewModel);
         }
 
-        // GET: Clientes/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Clientes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nome,Email,CPF,DataNascimento,DataCadastro,Ativo,Excluido")] ClienteViewModel clienteViewModel)
+        public ActionResult Create(ClienteEnderecoViewModel clienteEnderecoViewModel)
         {
             if (ModelState.IsValid)
             {
-                clienteViewModel.Id = Guid.NewGuid();
-                db.ClienteViewModels.Add(clienteViewModel);
-                db.SaveChanges();
+                _clienteAppService.Adicionar(clienteEnderecoViewModel);
                 return RedirectToAction("Index");
             }
 
-            return View(clienteViewModel);
+            return View(clienteEnderecoViewModel);
         }
 
-        // GET: Clientes/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ClienteViewModel clienteViewModel = db.ClienteViewModels.Find(id);
+
+            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
+
             if (clienteViewModel == null)
             {
                 return HttpNotFound();
@@ -75,30 +77,27 @@ namespace MC.CadastroCliente.UI.Web.Controllers
             return View(clienteViewModel);
         }
 
-        // POST: Clientes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nome,Email,CPF,DataNascimento,DataCadastro,Ativo,Excluido")] ClienteViewModel clienteViewModel)
+        public ActionResult Edit(ClienteViewModel clienteViewModel)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(clienteViewModel).State = EntityState.Modified;
-                db.SaveChanges();
+                _clienteAppService.Atualizar(clienteViewModel);
                 return RedirectToAction("Index");
             }
             return View(clienteViewModel);
         }
 
-        // GET: Clientes/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ClienteViewModel clienteViewModel = db.ClienteViewModels.Find(id);
+
+            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
+
             if (clienteViewModel == null)
             {
                 return HttpNotFound();
@@ -106,14 +105,11 @@ namespace MC.CadastroCliente.UI.Web.Controllers
             return View(clienteViewModel);
         }
 
-        // POST: Clientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            ClienteViewModel clienteViewModel = db.ClienteViewModels.Find(id);
-            db.ClienteViewModels.Remove(clienteViewModel);
-            db.SaveChanges();
+            _clienteAppService.Remover(id);
             return RedirectToAction("Index");
         }
 
@@ -121,7 +117,7 @@ namespace MC.CadastroCliente.UI.Web.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                _clienteAppService.Dispose();
             }
             base.Dispose(disposing);
         }
