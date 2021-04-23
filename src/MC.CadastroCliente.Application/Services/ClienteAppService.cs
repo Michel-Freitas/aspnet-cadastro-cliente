@@ -1,4 +1,5 @@
-﻿using MC.CadastroCliente.Application.Interfaces;
+﻿using AutoMapper;
+using MC.CadastroCliente.Application.Interfaces;
 using MC.CadastroCliente.Application.ViewModel;
 using MC.CadastroCliente.Domain.Interfaces;
 using MC.CadastroCliente.Domain.Models;
@@ -20,11 +21,7 @@ namespace MC.CadastroCliente.Application.Services
 
         public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel clienteEnderecoViewModel)
         {
-            var cliente = new Cliente
-            {
-                Nome = clienteEnderecoViewModel.Cliente.Nome,
-                Email = clienteEnderecoViewModel.Cliente.Email
-            };
+            var cliente = Mapper.Map<Cliente>(clienteEnderecoViewModel.Cliente);
 
             _clienteRepository.Adicionar(cliente);
 
@@ -33,11 +30,7 @@ namespace MC.CadastroCliente.Application.Services
 
         public ClienteViewModel Atualizar(ClienteViewModel clienteViewModel)
         {
-            var cliente = new Cliente
-            {
-                Nome = clienteViewModel.Nome,
-                Email = clienteViewModel.Email
-            };
+            var cliente = Mapper.Map<Cliente>(clienteViewModel);
 
             _clienteRepository.Atualizar(cliente);
 
@@ -46,32 +39,32 @@ namespace MC.CadastroCliente.Application.Services
 
         public IEnumerable<ClienteViewModel> ObterAtivos()
         {
-            throw new NotImplementedException();
+            return Mapper.Map<IEnumerable<ClienteViewModel>>(_clienteRepository.ObterAtivos());
         }
 
         public ClienteViewModel ObterPorCpf(string cpf)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorCpf(cpf));
         }
 
         public ClienteViewModel ObterPorEmail(string email)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorEmail(email));
         }
 
         public ClienteViewModel ObterPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorId(id));
         }
 
         public IEnumerable<ClienteViewModel> ObterTodos()
         {
-            throw new NotImplementedException();
+            return Mapper.Map<IEnumerable<ClienteViewModel>>(_clienteRepository.ObterTodos());
         }
 
         public void Remover(Guid id)
         {
-            throw new NotImplementedException();
+            _clienteRepository.Remover(id);
         }
 
         public void Dispose()

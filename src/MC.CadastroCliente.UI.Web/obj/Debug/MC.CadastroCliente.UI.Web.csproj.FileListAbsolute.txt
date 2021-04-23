@@ -113,3 +113,5 @@ C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\obj\Debug\MC.CadastroCliente.UI.Web.csproj.CopyComplete
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\obj\Debug\MC.CadastroCliente.UI.Web.dll
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\obj\Debug\MC.CadastroCliente.UI.Web.pdb
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\AutoMapper.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\AutoMapper.xml
