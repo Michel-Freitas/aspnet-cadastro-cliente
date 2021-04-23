@@ -3,8 +3,6 @@ using MC.CadastroCliente.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MC.CadastroCliente.Infra.Data.Repository
 {

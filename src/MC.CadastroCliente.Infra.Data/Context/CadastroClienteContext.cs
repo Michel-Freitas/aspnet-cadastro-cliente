@@ -7,9 +7,9 @@ namespace MC.CadastroCliente.Infra.Data.Context
 {
     public class CadastroClienteContext : DbContext
     {
-        public DbSet<Cliente> Clientes { get; private set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
-        public DbSet<Endereco> Enderecos { get; private set; }
+        public DbSet<Endereco> Enderecos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
