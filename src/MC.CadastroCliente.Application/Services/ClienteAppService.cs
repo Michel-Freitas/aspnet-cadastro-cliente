@@ -22,6 +22,10 @@ namespace MC.CadastroCliente.Application.Services
         public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel clienteEnderecoViewModel)
         {
             var cliente = Mapper.Map<Cliente>(clienteEnderecoViewModel.Cliente);
+            var endereco = Mapper.Map<Endereco>(clienteEnderecoViewModel.Endereco);
+
+            cliente.Enderecos.Add(endereco);
+            cliente.Ativo = true;
 
             _clienteRepository.Adicionar(cliente);
 

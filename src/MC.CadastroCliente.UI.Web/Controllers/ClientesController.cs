@@ -24,7 +24,7 @@ namespace MC.CadastroCliente.UI.Web.Controllers
 
         public ActionResult Index()
         {
-            return View(_clienteAppService.ObterTodos());
+            return View(_clienteAppService.ObterAtivos());
         }
         
         public ActionResult Details(Guid? id)
