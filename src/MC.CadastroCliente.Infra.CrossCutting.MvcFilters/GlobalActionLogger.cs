@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MC.CadastroCliente.Infra.CrossCutting.MvcFilters
 {
+    // Filtro para fazer as tratativas de erros de toda a aplicação
     public class GlobalActionLogge : ActionFilterAttribute
     {
         // Com esse filtro não precisa mais usar os try cacht na classe controller.
