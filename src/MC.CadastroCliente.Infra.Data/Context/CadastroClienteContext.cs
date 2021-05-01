@@ -22,6 +22,8 @@ namespace MC.CadastroCliente.Infra.Data.Context
 
         public DbSet<Endereco> Enderecos { get; set; }
 
+
+        // Configurações do Banco de Dados
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
