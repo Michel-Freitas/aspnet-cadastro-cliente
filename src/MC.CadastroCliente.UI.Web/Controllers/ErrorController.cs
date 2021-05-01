@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace MC.CadastroCliente.UI.Web.Controllers
 {
@@ -19,9 +15,9 @@ namespace MC.CadastroCliente.UI.Web.Controllers
             return View("NotFound");
         }
 
-        public ActionResult AcessDenied()
+        public ActionResult AccessDenied()
         {
-            return View("AcessDenied");
+            return View("AccessDenied");
         }
     }
 }

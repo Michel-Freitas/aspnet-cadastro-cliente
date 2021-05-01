@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using MC.CadastroCliente.Infra.CrossCutting.MvcFilters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace MC.CadastroCliente.UI.Web
@@ -8,6 +9,7 @@ namespace MC.CadastroCliente.UI.Web
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new GlobalActionLogge());
         }
     }
 }

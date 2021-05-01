@@ -117,3 +117,8 @@ C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\AutoMapper.xml
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\Dapper.dll
 C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\Dapper.xml
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\MC.CadastroCliente.Infra.CrossCutting.MvcFilters.dll
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\MC.CadastroCliente.Infra.CrossCutting.MvcFilters.pdb
+C:\Users\michel.santos\Documents\workspace-visual-studio\aspnet-cadastro-cliente\src\MC.CadastroCliente.UI.Web\bin\MC.CadastroCliente.Infra.CrossCutting.MvcFilters.dll.config
