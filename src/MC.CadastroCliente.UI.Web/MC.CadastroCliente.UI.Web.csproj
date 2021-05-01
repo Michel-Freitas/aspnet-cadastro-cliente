@@ -266,6 +266,10 @@
       <Project>{fc4d8574-492c-4c62-a550-ca88803e62c3}</Project>
       <Name>MC.CadastroCliente.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MC.CadastroCliente.Infra.CrossCutting.MvcFilters\MC.CadastroCliente.Infra.CrossCutting.MvcFilters.csproj">
+      <Project>{74fabd79-291d-41fb-a9c8-e975b5653e2d}</Project>
+      <Name>MC.CadastroCliente.Infra.CrossCutting.MvcFilters</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

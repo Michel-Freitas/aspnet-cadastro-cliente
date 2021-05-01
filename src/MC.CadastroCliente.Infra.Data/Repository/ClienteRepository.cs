@@ -27,7 +27,7 @@ namespace MC.CadastroCliente.Infra.Data.Repository
                         ON c.Id = e.ClienteId
                         WHERE c.Id = @uid AND c.Excluido = 0 AND c.Ativo = 1";
 
-            throw new Exception("Testando tratativas de erros");
+            // throw new Exception("Testando tratativas de erros");
 
             return Db.Database.Connection.Query<Cliente, Endereco, Cliente>(sql, 
                 (c, e) => { c.Enderecos.Add(e); return c; }, new {uid = id}).FirstOrDefault();

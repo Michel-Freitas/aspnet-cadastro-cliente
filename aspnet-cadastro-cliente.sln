@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC.CadastroCliente.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC.CadastroCliente.UI.Web", "src\MC.CadastroCliente.UI.Web\MC.CadastroCliente.UI.Web.csproj", "{7CD9CF9F-9CB0-454E-A4A9-1AD7D60B9AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC.CadastroCliente.Infra.CrossCutting.MvcFilters", "src\MC.CadastroCliente.Infra.CrossCutting.MvcFilters\MC.CadastroCliente.Infra.CrossCutting.MvcFilters.csproj", "{74FABD79-291D-41FB-A9C8-E975B5653E2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{7CD9CF9F-9CB0-454E-A4A9-1AD7D60B9AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD9CF9F-9CB0-454E-A4A9-1AD7D60B9AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD9CF9F-9CB0-454E-A4A9-1AD7D60B9AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FABD79-291D-41FB-A9C8-E975B5653E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FABD79-291D-41FB-A9C8-E975B5653E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FABD79-291D-41FB-A9C8-E975B5653E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FABD79-291D-41FB-A9C8-E975B5653E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{EA1F0ED3-C438-4A80-B9FB-827AF567553D} = {BDE478D4-F401-4CF6-9997-83C8F868B9F8}
 		{FC4D8574-492C-4C62-A550-CA88803E62C3} = {9B1EB21E-E0F7-4BF2-A20B-4C7233089D96}
 		{7CD9CF9F-9CB0-454E-A4A9-1AD7D60B9AD5} = {828931B9-B314-4AB9-8752-3B967F6764D6}
+		{74FABD79-291D-41FB-A9C8-E975B5653E2D} = {4C072CFC-45D1-4267-9EFC-02D767C3DC00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E415219-DC09-4313-B3C0-EF7DA37DA0D3}
